@@ -9,7 +9,7 @@
 import * as readline from 'readline';
 
 function factorial(denominator: number) {
-    // this function is a text reverser function.
+    // this function is a factorial calculator.
     if (denominator == 0)
     {
         return 1;
@@ -21,7 +21,8 @@ function factorial(denominator: number) {
     }
     else
     {
-        return 1;
+        var returnValue: number = denominator * factorial(denominator + 1);
+        return returnValue;
     }
 }
 
